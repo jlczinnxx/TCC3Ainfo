@@ -1,4 +1,6 @@
-/* CONFIGURAÇÕES GERAIS */
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
 
 * {
     margin: 0;
@@ -11,309 +13,952 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
-    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: #172033;
+
     background-color: white;
+
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
 }
 
 
-/* MENU */
+/* =========================
+   CORES
+========================= */
+
+:root {
+
+    --azul: #155eef;
+
+    --azul-escuro: #0d3ea8;
+
+    --azul-claro: #eef4ff;
+
+    --cinza: #f7f8fa;
+
+    --texto: #172033;
+
+    --texto-claro: #667085;
+
+    --borda: #e4e7ec;
+
+    --branco: #ffffff;
+
+}
+
+
+/* =========================
+   MENU
+========================= */
 
 header {
-    background-color: #155eef;
-    color: white;
+
     position: sticky;
+
     top: 0;
-    z-index: 10;
+
+    z-index: 100;
+
+    background-color: white;
+
+    border-bottom: 1px solid var(--borda);
+
 }
 
-nav {
+
+.navbar {
+
     width: 90%;
-    max-width: 1100px;
+
+    max-width: 1150px;
+
     margin: auto;
 
-    min-height: 70px;
+    height: 72px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
-}
 
-nav h2 {
-    font-size: 24px;
-}
-
-.menu {
-    display: flex;
-    gap: 20px;
-}
-
-.menu a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.menu a:hover {
-    text-decoration: underline;
 }
 
 
-/* INÍCIO */
+.logo {
 
-.inicio {
-    min-height: 500px;
+    font-size: 22px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
-
-    background-color: #eef4ff;
-}
-
-.inicio-texto {
-    width: 90%;
-    max-width: 700px;
-}
-
-.inicio h1 {
-    font-size: 60px;
-    color: #155eef;
-    margin-bottom: 10px;
-}
-
-.inicio h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.inicio p {
-    font-size: 20px;
-    color: #555;
-    margin-bottom: 30px;
-}
-
-
-/* BOTÃO */
-
-button {
-    border: none;
-
-    background-color: #155eef;
-    color: white;
-
-    padding: 14px 25px;
-
-    border-radius: 8px;
-
-    font-size: 16px;
     font-weight: bold;
 
-    cursor: pointer;
-}
+    color: var(--azul);
 
-button:hover {
-    background-color: #0c3fa8;
 }
 
 
-/* SEÇÕES */
-
-.secao {
-    width: 90%;
-    max-width: 1000px;
-
-    margin: auto;
-
-    padding: 80px 0;
-
-    text-align: center;
-}
-
-.secao h2 {
-    font-size: 34px;
-    color: #155eef;
-
-    margin-bottom: 25px;
-}
-
-.secao p {
-    max-width: 800px;
-
-    margin: 0 auto 15px;
-
-    color: #555;
-
-    font-size: 17px;
-}
-
-
-/* FUNDO AZUL CLARO */
-
-.fundo {
-    width: 100%;
-    max-width: none;
-
-    padding-left: 5%;
-    padding-right: 5%;
-
-    background-color: #f3f6fb;
-}
-
-
-/* CARDS */
-
-.cards {
-    max-width: 1000px;
-
-    margin: 40px auto 0;
+.links {
 
     display: flex;
 
     gap: 25px;
 
-    justify-content: center;
-}
-
-.card {
-    background-color: white;
-
-    width: 30%;
-
-    padding: 30px 20px;
-
-    border-radius: 10px;
-
-    border: 1px solid #ddd;
-
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
-}
-
-.card h3 {
-    margin-bottom: 15px;
-
-    color: #155eef;
-}
-
-.card p {
-    font-size: 15px;
 }
 
 
-/* COMO FUNCIONA */
+.links a {
 
-.passos {
-    display: flex;
+    color: #475467;
 
-    justify-content: center;
+    font-size: 14px;
 
-    gap: 30px;
+    font-weight: bold;
 
-    margin-top: 40px;
 }
 
-.passos > div {
-    width: 30%;
 
-    padding: 20px;
+.links a:hover {
+
+    color: var(--azul);
+
 }
 
-.passos span {
-    width: 45px;
-    height: 45px;
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+    min-height: 560px;
+
+    background-color: var(--azul-claro);
 
     display: flex;
 
     align-items: center;
+
     justify-content: center;
 
-    margin: 0 auto 15px;
+    gap: 100px;
 
-    background-color: #155eef;
+    padding: 80px 7%;
 
-    color: white;
+}
 
-    border-radius: 50%;
+
+.hero-content {
+
+    max-width: 650px;
+
+}
+
+
+.tag {
+
+    display: inline-block;
+
+    color: var(--azul);
+
+    font-size: 12px;
 
     font-weight: bold;
 
-    font-size: 20px;
+    letter-spacing: 1px;
+
+    margin-bottom: 20px;
+
 }
 
-.passos h3 {
-    margin-bottom: 10px;
+
+.hero h1 {
+
+    font-size: clamp(40px, 5vw, 65px);
+
+    line-height: 1.05;
+
+    margin-bottom: 25px;
+
 }
 
 
-/* RODAPÉ */
+.hero h1 span {
 
-footer {
-    background-color: #10213b;
+    color: var(--azul);
+
+}
+
+
+.hero p {
+
+    font-size: 18px;
+
+    color: var(--texto-claro);
+
+    max-width: 600px;
+
+}
+
+
+.botoes {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 30px;
+
+}
+
+
+.botao {
+
+    padding: 13px 20px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+}
+
+
+.principal {
+
+    background-color: var(--azul);
 
     color: white;
 
+}
+
+
+.principal:hover {
+
+    background-color: var(--azul-escuro);
+
+}
+
+
+.secundario {
+
+    background-color: white;
+
+    color: var(--azul);
+
+    border: 1px solid #cfd6e4;
+
+}
+
+
+/* CARTÃO DO HERO */
+
+.hero-card {
+
+    width: 280px;
+
+    padding: 35px 25px;
+
+    background-color: white;
+
+    border-radius: 20px;
+
     text-align: center;
 
-    padding: 35px 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+
 }
 
-footer h3 {
-    font-size: 22px;
 
-    margin-bottom: 8px;
+.icone-celular {
+
+    font-size: 70px;
+
+    margin-bottom: 15px;
+
 }
 
-footer p {
-    color: #cbd5e1;
+
+.hero-card h3 {
+
+    font-size: 24px;
+
+}
+
+
+.hero-card p {
+
+    font-size: 14px;
 
     margin-top: 5px;
+
 }
 
 
-/* CELULAR */
+.status {
 
-@media (max-width: 700px) {
+    margin-top: 25px;
 
-    nav {
+    padding: 10px;
+
+    background-color: #ecfdf3;
+
+    color: #027a48;
+
+    border-radius: 8px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+}
+
+
+.status span {
+
+    display: inline-block;
+
+    width: 8px;
+
+    height: 8px;
+
+    background-color: #12b76a;
+
+    border-radius: 50%;
+
+    margin-right: 5px;
+
+}
+
+
+/* =========================
+   SEÇÕES
+========================= */
+
+.section {
+
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 90px 0;
+
+}
+
+
+.cinza {
+
+    width: 100%;
+
+    max-width: none;
+
+    padding-left: 5%;
+
+    padding-right: 5%;
+
+    background-color: var(--cinza);
+
+}
+
+
+.titulo {
+
+    text-align: center;
+
+    max-width: 700px;
+
+    margin: 0 auto 50px;
+
+}
+
+
+.titulo span {
+
+    color: var(--azul);
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+}
+
+
+.titulo h2 {
+
+    font-size: 36px;
+
+    line-height: 1.15;
+
+    margin-top: 10px;
+
+}
+
+
+.titulo p {
+
+    color: var(--texto-claro);
+
+    margin-top: 12px;
+
+}
+
+
+/* =========================
+   SOBRE
+========================= */
+
+.sobre-grid {
+
+    display: grid;
+
+    grid-template-columns: 1.3fr 0.7fr;
+
+    gap: 40px;
+
+    align-items: center;
+
+}
+
+
+.sobre-grid p {
+
+    color: var(--texto-claro);
+
+    margin-bottom: 18px;
+
+}
+
+
+.destaque {
+
+    background-color: var(--azul);
+
+    color: white;
+
+    padding: 30px;
+
+    border-radius: 16px;
+
+}
+
+
+.destaque strong {
+
+    font-size: 20px;
+
+}
+
+
+.destaque p {
+
+    color: #e7efff;
+
+    margin-top: 12px;
+
+}
+
+
+/* =========================
+   OBJETIVOS
+========================= */
+
+.objetivos-grid {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.objetivo {
+
+    background-color: white;
+
+    padding: 30px;
+
+    border: 1px solid var(--borda);
+
+    border-radius: 14px;
+
+}
+
+
+.numero {
+
+    color: var(--azul);
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+
+}
+
+
+.objetivo h3 {
+
+    margin-bottom: 10px;
+
+}
+
+
+.objetivo p {
+
+    color: var(--texto-claro);
+
+    font-size: 14px;
+
+}
+
+
+/* =========================
+   FUNCIONALIDADES
+========================= */
+
+.funcionalidades-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.funcao {
+
+    border: 1px solid var(--borda);
+
+    border-radius: 15px;
+
+    padding: 25px;
+
+    transition: 0.2s;
+
+}
+
+
+.funcao:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.07);
+
+}
+
+
+.funcao-icone {
+
+    font-size: 30px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.funcao h3 {
+
+    margin-bottom: 10px;
+
+}
+
+
+.funcao p {
+
+    color: var(--texto-claro);
+
+    font-size: 14px;
+
+}
+
+
+/* =========================
+   ETAPAS
+========================= */
+
+.linha {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.etapa {
+
+    text-align: center;
+
+}
+
+
+.bolinha {
+
+    width: 45px;
+
+    height: 45px;
+
+    margin: 0 auto 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: var(--azul);
+
+    color: white;
+
+    font-weight: bold;
+
+}
+
+
+.etapa h3 {
+
+    margin-bottom: 8px;
+
+}
+
+
+.etapa p {
+
+    color: var(--texto-claro);
+
+    font-size: 14px;
+
+}
+
+
+/* =========================
+   PROPOSTA
+========================= */
+
+.proposta {
+
+    background-color: var(--azul);
+
+    color: white;
+
+    padding: 70px 8%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 40px;
+
+}
+
+
+.proposta > div {
+
+    max-width: 700px;
+
+}
+
+
+.proposta span {
+
+    color: #cfe0ff;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+}
+
+
+.proposta h2 {
+
+    font-size: 38px;
+
+    margin: 10px 0;
+
+}
+
+
+.proposta p {
+
+    color: #e4edff;
+
+}
+
+
+.proposta button {
+
+    border: none;
+
+    padding: 14px 22px;
+
+    border-radius: 8px;
+
+    background-color: white;
+
+    color: var(--azul);
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+/* =========================
+   REFERÊNCIA
+========================= */
+
+.referencia {
+
+    padding: 60px 8%;
+
+    text-align: center;
+
+    background-color: #f9fafb;
+
+}
+
+
+.referencia h2 {
+
+    margin-bottom: 10px;
+
+}
+
+
+.referencia p {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    color: var(--texto-claro);
+
+}
+
+
+.referencia a {
+
+    display: inline-block;
+
+    margin-top: 15px;
+
+    color: var(--azul);
+
+    font-weight: bold;
+
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+
+    background-color: #101828;
+
+    color: white;
+
+    padding: 35px 8%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+}
+
+
+footer h3 {
+
+    margin-bottom: 5px;
+
+}
+
+
+footer p {
+
+    color: #98a2b3;
+
+    font-size: 14px;
+
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 850px) {
+
+
+    .links {
+
+        gap: 12px;
+
+    }
+
+
+    .hero {
+
         flex-direction: column;
+
+        text-align: center;
+
+        gap: 45px;
+
+    }
+
+
+    .botoes {
+
+        justify-content: center;
+
+    }
+
+
+    .sobre-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .objetivos-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .funcionalidades-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+
+    .linha {
+
+        grid-template-columns: 1fr 1fr;
+
+        row-gap: 40px;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+
+    .navbar {
+
+        height: auto;
 
         padding: 20px 0;
 
+        flex-direction: column;
+
         gap: 15px;
+
     }
 
-    .menu {
+
+    .links {
+
         flex-wrap: wrap;
 
         justify-content: center;
 
-        gap: 12px;
     }
 
-    .inicio h1 {
-        font-size: 45px;
+
+    .hero {
+
+        padding: 65px 5%;
+
     }
 
-    .inicio h2 {
-        font-size: 23px;
+
+    .hero h1 {
+
+        font-size: 42px;
+
     }
 
-    .cards {
+
+    .botoes {
+
         flex-direction: column;
+
     }
 
-    .card {
-        width: 100%;
+
+    .funcionalidades-grid {
+
+        grid-template-columns: 1fr;
+
     }
 
-    .passos {
+
+    .linha {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .proposta {
+
         flex-direction: column;
+
+        text-align: center;
+
     }
 
-    .passos > div {
-        width: 100%;
+
+    .proposta h2 {
+
+        font-size: 30px;
+
+    }
+
+
+    footer {
+
+        flex-direction: column;
+
+        text-align: center;
+
     }
 
 }
