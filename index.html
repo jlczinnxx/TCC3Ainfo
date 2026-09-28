@@ -1,14 +1,761 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+    content="EduControl - proposta de aplicativo para controle do uso de dispositivos móveis no ambiente escolar.">
+
+  <title>EduControl | Controle de Dispositivos</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>3A INFO</h1>
-    <p>Olá Mundo</p>
-    <hr>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo rem officia est necessitatibus temporibus sapiente consequuntur natus et earum ducimus nesciunt, sit asperiores maiores vero ab quisquam dolores repellendus harum.</p>
+
+  <!-- CABEÇALHO -->
+  <header class="header">
+
+    <nav class="nav container">
+
+      <a href="#inicio" class="brand">
+        <span class="brand-icon">📱</span>
+        <span>Edu<span>Control</span></span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn">
+        ☰
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#inicio">Início</a>
+        <a href="#proposta">Proposta</a>
+        <a href="#funcionalidades">Funcionalidades</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#painel">Painel</a>
+      </div>
+
+    </nav>
+
+  </header>
+
+
+  <main>
+
+    <!-- INÍCIO -->
+    <section class="hero" id="inicio">
+
+      <div class="container hero-grid">
+
+        <div class="hero-content">
+
+          <span class="eyebrow">
+            TCC • Técnico em Informática
+          </span>
+
+          <h1>
+            Mais foco na sala.
+            <br>
+            <span>Mais equilíbrio com a tecnologia.</span>
+          </h1>
+
+          <p>
+            Uma proposta de solução tecnológica para auxiliar no controle
+            do uso de smartphones no ambiente escolar do
+            CEEP Hélio Xavier de Vasconcelos.
+          </p>
+
+          <div class="hero-actions">
+
+            <a href="#funcionalidades" class="btn primary">
+              Conhecer a proposta
+            </a>
+
+            <a href="#painel" class="btn secondary">
+              Ver demonstração
+            </a>
+
+          </div>
+
+
+          <div class="authors">
+
+            <strong>Autores</strong>
+
+            <span>
+              Jefferson David Silva de Moraes
+            </span>
+
+            <span>
+              João Lucas Costa de Assis
+            </span>
+
+            <span>
+              João Lucas Ribeiro da Silva
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <!-- CELULAR -->
+        <div class="phone-wrap">
+
+          <div class="phone">
+
+            <div class="phone-top"></div>
+
+            <div class="phone-screen">
+
+              <div class="mini-header">
+                <span>EduControl</span>
+                <span>●</span>
+              </div>
+
+              <p class="mini-label">
+                STATUS DA SALA
+              </p>
+
+              <div class="status-card">
+
+                <div class="status-icon">
+                  ✓
+                </div>
+
+                <div>
+                  <strong>Uso controlado</strong>
+                  <small>Horário de aula</small>
+                </div>
+
+              </div>
+
+
+              <div class="mini-stat-grid">
+
+                <div>
+                  <strong>28</strong>
+                  <small>Alunos</small>
+                </div>
+
+                <div>
+                  <strong>24</strong>
+                  <small>Controlados</small>
+                </div>
+
+              </div>
+
+
+              <div class="progress">
+                <div></div>
+              </div>
+
+              <small class="progress-text">
+                85% dos dispositivos sob controle
+              </small>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PROPOSTA -->
+    <section class="section" id="proposta">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="eyebrow">
+            O problema
+          </span>
+
+          <h2>
+            Controle sem impedir a tecnologia
+          </h2>
+
+          <p>
+            O projeto parte da necessidade de equilibrar os benefícios
+            dos dispositivos móveis com as demandas de concentração
+            e organização do ambiente escolar.
+          </p>
+
+        </div>
+
+
+        <div class="cards three">
+
+          <article class="info-card">
+
+            <div class="icon">
+              🎯
+            </div>
+
+            <h3>
+              Concentração
+            </h3>
+
+            <p>
+              Reduzir distrações durante as atividades e favorecer
+              a atenção dos estudantes.
+            </p>
+
+          </article>
+
+
+          <article class="info-card">
+
+            <div class="icon">
+              👨‍🏫
+            </div>
+
+            <h3>
+              Apoio aos professores
+            </h3>
+
+            <p>
+              Oferecer recursos para acompanhar horários e registrar
+              ocorrências relacionadas ao uso.
+            </p>
+
+          </article>
+
+
+          <article class="info-card">
+
+            <div class="icon">
+              💡
+            </div>
+
+            <h3>
+              Uso consciente
+            </h3>
+
+            <p>
+              Permitir que a tecnologia continue disponível quando
+              houver finalidade pedagógica.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FUNCIONALIDADES -->
+    <section class="section alt" id="funcionalidades">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="eyebrow">
+            A solução
+          </span>
+
+          <h2>
+            Funcionalidades propostas
+          </h2>
+
+          <p>
+            Recursos pensados a partir das necessidades levantadas
+            no projeto de TCC.
+          </p>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+          <article class="feature">
+
+            <span>01</span>
+
+            <h3>
+              Controle de horários
+            </h3>
+
+            <p>
+              Definição de períodos em que o uso do smartphone
+              é permitido ou restrito.
+            </p>
+
+          </article>
+
+
+          <article class="feature">
+
+            <span>02</span>
+
+            <h3>
+              Registro de ocorrências
+            </h3>
+
+            <p>
+              Registro organizado de situações relacionadas
+              ao uso inadequado dos aparelhos.
+            </p>
+
+          </article>
+
+
+          <article class="feature">
+
+            <span>03</span>
+
+            <h3>
+              Acompanhamento
+            </h3>
+
+            <p>
+              Visualização de informações que podem auxiliar
+              professores e gestão escolar.
+            </p>
+
+          </article>
+
+
+          <article class="feature">
+
+            <span>04</span>
+
+            <h3>
+              Notificações
+            </h3>
+
+            <p>
+              Avisos sobre mudanças de horário, regras e situações
+              que exigem atenção.
+            </p>
+
+          </article>
+
+
+          <article class="feature">
+
+            <span>05</span>
+
+            <h3>
+              Relatórios
+            </h3>
+
+            <p>
+              Organização dos registros para facilitar a análise
+              e tomada de decisões.
+            </p>
+
+          </article>
+
+
+          <article class="feature">
+
+            <span>06</span>
+
+            <h3>
+              Finalidade pedagógica
+            </h3>
+
+            <p>
+              Manter a possibilidade de uso do dispositivo quando
+              ele for necessário para a aula.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- COMO FUNCIONA -->
+    <section class="section" id="como-funciona">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="eyebrow">
+            Fluxo da proposta
+          </span>
+
+          <h2>
+            Como o sistema poderia funcionar?
+          </h2>
+
+        </div>
+
+
+        <div class="steps">
+
+          <div class="step">
+
+            <div class="step-number">
+              1
+            </div>
+
+            <div>
+              <h3>
+                Configurar
+              </h3>
+
+              <p>
+                A escola define horários e regras de utilização.
+              </p>
+            </div>
+
+          </div>
+
+
+          <div class="step">
+
+            <div class="step-number">
+              2
+            </div>
+
+            <div>
+              <h3>
+                Acompanhar
+              </h3>
+
+              <p>
+                Professores e gestão consultam as informações disponíveis.
+              </p>
+            </div>
+
+          </div>
+
+
+          <div class="step">
+
+            <div class="step-number">
+              3
+            </div>
+
+            <div>
+              <h3>
+                Registrar
+              </h3>
+
+              <p>
+                Ocorrências podem ser registradas de forma organizada.
+              </p>
+            </div>
+
+          </div>
+
+
+          <div class="step">
+
+            <div class="step-number">
+              4
+            </div>
+
+            <div>
+              <h3>
+                Analisar
+              </h3>
+
+              <p>
+                Os dados ajudam a identificar padrões e necessidades.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PAINEL -->
+    <section class="section dashboard-section" id="painel">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="eyebrow">
+            Protótipo interativo
+          </span>
+
+          <h2>
+            Painel de demonstração
+          </h2>
+
+          <p>
+            Uma representação visual de como os recursos do aplicativo
+            poderiam ser organizados.
+          </p>
+
+        </div>
+
+
+        <div class="dashboard">
+
+          <!-- MENU LATERAL -->
+          <aside class="sidebar">
+
+            <div class="side-brand">
+              EduControl
+            </div>
+
+            <button
+              class="side-link active"
+              data-view="visao">
+              ◉ Visão geral
+            </button>
+
+            <button
+              class="side-link"
+              data-view="horarios">
+              ◷ Horários
+            </button>
+
+            <button
+              class="side-link"
+              data-view="ocorrencias">
+              ⚠ Ocorrências
+            </button>
+
+            <button
+              class="side-link"
+              data-view="relatorios">
+              ▣ Relatórios
+            </button>
+
+          </aside>
+
+
+          <!-- CONTEÚDO -->
+          <div class="dash-main">
+
+            <div class="dash-top">
+
+              <div>
+
+                <span class="dash-kicker">
+                  Painel escolar
+                </span>
+
+                <h3 id="dashTitle">
+                  Visão geral
+                </h3>
+
+              </div>
+
+
+              <span class="live">
+
+                <i></i>
+
+                Sistema demonstrativo
+
+              </span>
+
+            </div>
+
+
+            <div
+              class="dash-content"
+              id="dashContent">
+
+              <div class="metric-grid">
+
+                <div class="metric">
+
+                  <span>
+                    Alunos
+                  </span>
+
+                  <strong>
+                    28
+                  </strong>
+
+                  <small>
+                    Turma em demonstração
+                  </small>
+
+                </div>
+
+
+                <div class="metric">
+
+                  <span>
+                    Uso controlado
+                  </span>
+
+                  <strong>
+                    24
+                  </strong>
+
+                  <small>
+                    Dispositivos
+                  </small>
+
+                </div>
+
+
+                <div class="metric">
+
+                  <span>
+                    Ocorrências
+                  </span>
+
+                  <strong>
+                    04
+                  </strong>
+
+                  <small>
+                    Registros no período
+                  </small>
+
+                </div>
+
+              </div>
+
+
+              <div class="chart-card">
+
+                <div class="chart-title">
+
+                  <strong>
+                    Uso por período
+                  </strong>
+
+                  <span>
+                    Expectativa do projeto
+                  </span>
+
+                </div>
+
+
+                <div class="fake-chart">
+
+                  <div style="height:45%">
+                    <span>7h</span>
+                  </div>
+
+                  <div style="height:65%">
+                    <span>8h</span>
+                  </div>
+
+                  <div style="height:35%">
+                    <span>9h</span>
+                  </div>
+
+                  <div style="height:78%">
+                    <span>10h</span>
+                  </div>
+
+                  <div style="height:52%">
+                    <span>11h</span>
+                  </div>
+
+                  <div style="height:30%">
+                    <span>12h</span>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <p class="prototype-note">
+          * Os números exibidos são apenas ilustrativos e não representam
+          resultados reais da pesquisa.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- FINAL -->
+    <section class="section cta">
+
+      <div class="container cta-box">
+
+        <div>
+
+          <span class="eyebrow">
+            Projeto de TCC
+          </span>
+
+          <h2>
+            Tecnologia como parte da solução.
+          </h2>
+
+          <p>
+            Uma proposta para aproximar informática, educação e uso
+            responsável dos dispositivos móveis.
+          </p>
+
+        </div>
+
+
+        <button class="btn light" id="proposalBtn">
+          Ver proposta
+        </button>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- RODAPÉ -->
+  <footer>
+
+    <div class="container footer-content">
+
+      <div>
+
+        <strong>
+          EduControl
+        </strong>
+
+        <span>
+          Proposta de TCC • Técnico em Informática
+        </span>
+
+      </div>
+
+      <span>
+        CEEP Hélio Xavier de Vasconcelos • 2026
+      </span>
+
+    </div>
+
+  </footer>
+
+
+  <div class="toast" id="toast">
+    Seção da proposta selecionada.
+  </div>
+
+
+  <script src="script.js"></script>
+
 </body>
 </html>
